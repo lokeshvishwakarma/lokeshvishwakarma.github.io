@@ -829,8 +829,7 @@ cite {
 
 .reel {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.75rem;
+  gap: 2.75rem;
   margin-top: 2.25rem;
 }
 
@@ -1052,11 +1051,6 @@ cite {
   .edu-grid,
   .spec {
     grid-template-columns: 1fr;
-  }
-
-  .reel {
-    grid-template-columns: 1fr;
-    gap: 2.25rem;
   }
 
   .certs li {
