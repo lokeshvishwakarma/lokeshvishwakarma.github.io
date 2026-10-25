@@ -827,6 +827,68 @@ cite {
   font-size: 0.95rem;
 }
 
+.reel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem;
+  margin-top: 2.25rem;
+}
+
+.frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  background: #000;
+}
+
+.frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.reel-meta {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 0.35rem 1.25rem;
+  align-items: start;
+  margin-top: 0.95rem;
+}
+
+.reel-meta .num {
+  padding-top: 0.28rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.reel h2 {
+  font-family: var(--sans);
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.reel-meta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.reel-meta a:hover {
+  color: var(--ink);
+}
+
 .contact-wrap {
   max-width: 760px;
 }
@@ -990,6 +1052,11 @@ cite {
   .edu-grid,
   .spec {
     grid-template-columns: 1fr;
+  }
+
+  .reel {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
   }
 
   .certs li {
